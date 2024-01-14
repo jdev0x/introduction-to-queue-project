@@ -5,7 +5,7 @@
 In this project, we will cover the fundamentals of the queue.
 
 ### Problem
-Store the invoice number using a queue.
+Store invoice numbers of orders using a queue.
 
 ### Implementation
 
