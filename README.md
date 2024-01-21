@@ -9,29 +9,28 @@ Store invoice numbers of orders using a queue.
 
 ### Implementation
 
-Write the `queue` class implementation to store the invoice number.
+Implement **enqueue, dequeue, and display** methods.
 
-1. Create a `queue `class that contains three methods: enqueue, dequeue, and display.
-2. The `enQueue` method allows to add a new element.
-3. The `display` method prints all elements in the queue.
-
+> The **display()** method should print out all the element in the queue
+> 
 > Run the main method to verify the implementation.
 
 ````Java
 public class Main {
   /*add your code here*/
   public static void main(String[] args) {
-        Queue que = new Queue();
+      Queue que = new Queue();
 
-        que.enqueue(100);
-        que.enqueue(101);
-        que.enqueue(102);
-        que.dequeue();
-        que.display();
+      que.enqueue(100);
+      que.enqueue(101);
+      que.enqueue(102);
+
+      que.dequeue();
+
+      que.display();
     }
 }
 ````
 
 > * Once you complete this project, Create an issue with the title "Completed [your-username]".
-> * You can use either Queue Array or Queue Linked List, to complete this project.
 > * Create an issue of your questions, If you face any trouble solving the project.

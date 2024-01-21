@@ -7,7 +7,9 @@ public class Main {
       que.enqueue(100);
       que.enqueue(101);
       que.enqueue(102);
+
       que.dequeue();
+
       que.display();
     }
 }
