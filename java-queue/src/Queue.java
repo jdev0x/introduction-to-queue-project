@@ -12,14 +12,34 @@ public class Queue {
 
     // enqueue
     public void enqueue(int newData) {
-        // write the implementation
+        Node newNode = new Node(newData);
+        if (rear != null){
+            rear.next = newNode;
+        }
+        rear = newNode;
+        if (front == null){
+            front = rear;
+        }
+
     }
     // dequeue
     public void dequeue() {
-        // write the implementation
+        if(front == null){
+            System.out.println("queue is empty");
+            return;
+        } 
+        int data = front.data;
+        front = front.next;
+        System.out.println(data);
+        
     }
     // display
     public void display() {
+        Node x = front;
+        while (x != null) {
+            System.out.println(x.data);
+            x = x.next; 
+        }
 
     }
 }
